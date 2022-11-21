@@ -53,9 +53,7 @@ export const MagicPanel: React.FC = () => {
         {buttons.map(({ id, label }) => (
           <button
             onClick={() => {
-              const foundIndex = buttons.findIndex(
-                (button) => button.id === id
-              );
+              const foundIndex = buttons.findIndex((prsty) => prsty.id === id);
 
               if (foundIndex >= 0) {
                 const newButtons = _.clone(buttons);
@@ -67,9 +65,9 @@ export const MagicPanel: React.FC = () => {
                   });
                 }
                 if (foundIndex === 7) {
-                  newButtons[foundIndex].label = "C";
+                  newButtons[foundIndex].label = "0";
                 } else {
-                  newButtons[foundIndex].label = "B";
+                  newButtons[foundIndex].label = "X";
                 }
                 setButtons(newButtons);
               }

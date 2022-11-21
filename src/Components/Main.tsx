@@ -95,6 +95,7 @@ export const Main: React.FC = () => {
         {selectedTask === "Uloha 3" && <People />}
         {selectedTask === "Tic-tac-toe" && <MagicPanel />}
         {selectedTask === "Employee" && <Employee />}
+        {selectedTask}
       </div>
     </div>
   );

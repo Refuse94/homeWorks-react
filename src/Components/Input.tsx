@@ -11,13 +11,17 @@ export const Input: React.FC<{
   // };
 
   return (
-    <input
-      onClick={() => nastavHodnotuPolicka("ahoj")}
-      type="text"
-      value={hodnotaPolicka}
-      onChange={(e) => nastavHodnotuPolicka(e.target.value)}
-      style={{ width: customWidth, height: customHeight }}
-      // onChange={(event) => onChange(event.target.value)}
-    />
+    <div>
+      <label>Môj popis: </label>
+      <input
+        onClick={() => nastavHodnotuPolicka("Ano klikol si")}
+        type="text"
+        value={hodnotaPolicka}
+        onChange={(e) => nastavHodnotuPolicka(e.target.value)}
+        style={{ width: customWidth, height: customHeight }}
+
+        // onChange={(event) => onChange(event.target.value)}
+      />
+    </div>
   );
 };
